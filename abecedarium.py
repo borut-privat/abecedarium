@@ -53066,3 +53066,5 @@ zvršetek
     random.shuffle(resitve)
     df = pd.DataFrame(besede)
     st.table(df)
+
+sparbeceda()
