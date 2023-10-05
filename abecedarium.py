@@ -53064,7 +53064,7 @@ zvršetek
             if st_crk>=3 and st_crk==len(bes):
                 resitve.append(bes)
         random.shuffle(resitve)
-        df = pd.DataFrame(besede)
+        df = pd.DataFrame(resitve)
         st.table(df)
 
 sparbeceda()
