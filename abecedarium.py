@@ -53063,7 +53063,6 @@ zvršetek
                     st_crk+=1
             if st_crk>=3 and st_crk==len(bes):
                 resitve.append(bes)
-        random.shuffle(resitve)
         df = pd.DataFrame(resitve)
         st.table(df)
 
