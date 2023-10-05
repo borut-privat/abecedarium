@@ -53051,20 +53051,20 @@ zvršetek
 žvrkelj
 žvrklja
 žvrkljanje"""
-    
-    besede = data.split('\n')
-    resitve=[]
-    for bes in besede:
-        crke2=crke[:]
-        st_crk=0
-        for crka_st in range(len(bes)):
-            if bes[crka_st] in crke2:
-                crke2.remove(bes[crka_st])
-                st_crk+=1
-        if st_crk>=3 and st_crk==len(bes):
-            resitve.append(bes)
-    random.shuffle(resitve)
-    df = pd.DataFrame(besede)
-    st.table(df)
+    if len(crke)==10:
+        besede = data.split('\n')
+        resitve=[]
+        for bes in besede:
+            crke2=crke[:]
+            st_crk=0
+            for crka_st in range(len(bes)):
+                if bes[crka_st] in crke2:
+                    crke2.remove(bes[crka_st])
+                    st_crk+=1
+            if st_crk>=3 and st_crk==len(bes):
+                resitve.append(bes)
+        random.shuffle(resitve)
+        df = pd.DataFrame(besede)
+        st.table(df)
 
 sparbeceda()
