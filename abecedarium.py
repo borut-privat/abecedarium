@@ -53051,7 +53051,7 @@ zvršetek
 žvrkelj
 žvrklja
 žvrkljanje"""
-    if len(crke)==10:
+    if len(crke)==16:
         besede = data.split('\n')
         resitve=[]
         for bes in besede:
